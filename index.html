@@ -88,7 +88,7 @@ body{
 }
 
 #welcome-section h2{
-    color: rgb(37, 199, 123);
+    color: rgb(14, 201, 158);
 }
 
 #projects{
@@ -108,36 +108,57 @@ body{
 }
 
 #projects ul{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
     list-style-type: none;
+    justify-items: space-between;
+    padding-left: 3.5%;
+    padding-right: 3%;
+    padding-top: 2%;
+}
+
+#projects ul li{
+    
+    border-radius: 50%;
+    box-shadow: 0 0 2em rgb(25, 24, 25);
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
     
 }
-#projects ul li{
-    border: black 2px solid;
-    text-decoration: none;
-    max-width: 200px;
+
+
+.project-img {
+    
+    width: 150%;
+    object-fit: cover;
 }
 
 #contact-me{
     background: url(https://images.pexels.com/photos/1216345/pexels-photo-1216345.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
     padding-top: 10%;
 
 }
 
 .heading {
-    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
-    
+    padding-left: 5%;
     
 }
 
+.contact-links {
+    padding-top: 10%;
+    padding-left: 25%;
+}
+
+.contact-links a{
+    color:blanchedalmond;
+    font-size: 26px;
+    
+}
 
 
     </style>
@@ -170,16 +191,16 @@ body{
                 <h1>My recent projects</h1>
             <ul>
                 <li>
-                    <a href="https://codepen.io/naomie74150/full/yLMgLep" target="_blank">Project 1: Tribute page</a>
+                    <a href="https://codepen.io/naomie74150/full/yLMgLep" target="_blank"> <img class="project-img" src="https://lh3.googleusercontent.com/6lrIWVAOAlikzBKeteQsfEpcwtxPaWrSPM469zFYaedycybALVxGRKZfQKixbFLf6iu7qmEWyYylt10pP7yuzBBlRI8AMg9Bz30FVFQ-UTf5OI8V6P3K0J2KVKD8Ithvw-JvpBpIGB13NRysjfw6YeiZu9oP5J5Q4U1Dve4K4JaK0IXl2neSCudpqHpaDtmWxnLrOGH8uhirZagke2Wb1YLYKljqfFea181J9ArebWJs2hu7YZTnvZGa1AJ70OOI4vEDbJbfMtGPU33SrElns_8vBjoDuXiA506-oviAL28LZOReY7Ays7FtG8k9jbiL-2uH_TdChrUNq2UEqjuio2tORKyjqUyE19pz2rHld2VDEkEIdrjsad_yygPw0LXc5dUydym3laXjqtXAAFzOsBUaT5D3WlpEt01Dd6K0bkOcLtLuChb2fyjALRirJlhR-k2jl-zuXDzmZ--umnUBs4ItOk7Lo998N--EotNPj9grCdp4gYouoTnhnHFVI_JAC8Rkq-xMCOP8jDvUJcNhGedavmGF5Urlvemu_pclG2o5COlBkoqFePPRIpQ2ZU7PR7Zf9o2oz9lQfi-xcROGyK4TMNTTeA-tgm5iKGOFrdBhAndCeoRHcPBHRlNxpS0zWBvv6GkOvRgLzn3WWbA5D-ho3Vx2SKF5_woCwu_rUp4d71vW9pINDasVCawMdE2TdFWnmDfvAIJng61tv2gfEBI=w795-h559-no?authuser=1" alt="Project 1" /></a>
                 </li>
                 <li>
-                    <a href="https://codepen.io/naomie74150/full/yLMMywm" target="_blank">Project 2: Survey form</a>
+                    <a href="https://codepen.io/naomie74150/full/yLMMywm" target="_blank"><img class="project-img" src="https://lh3.googleusercontent.com/D5NGybdfbBc4VImoan_xYh2bGLEASuh83tCFMOCUlVgp5VvgnVG_r2cPTWGDcuzwbHHZL-XYargwik7ZxIbKAhws0w9iTJ9vmYXIx33XNb7LW1dHIlRSvFOmeQ1s7Z75kZ-ImsZmnmLp7-2jVYJV-ofgjXuPpgk76n0jV8jxll9WeeHKUT6ISgNdWPoToWdXJPbjXDHl4Fc9Bv8EK6VcjAI7mccqZbQtwffTKlwzDgSyMvtNuaGLQ27fVVEsVjqg1O86ivm8Hu-GLZ2CjOMA4K9QcYvhKSnZ-awbdsgssZc8AoYS9hZ0XrIKgEDMU9BHVGwxvY7-Mw39gKpQ6jr9_y-q9Jiyf6kFZMmvXSw6yd3KX0851XEKQFKpYksuPdz8d0a8kU7IAY3FqVfBcCAdhjd609O06Qv3SiquFs7Q0sv96BbDqatCFaVaieYwvIBQ4TQ2lwFLS6RzROYdDWc5HXLTs3CHhpXVwadkpiVcnJ-huPpEfTtVvsq0JkULak9qhklSY5JDBvqKFj2nS7T-nR0tw-p19RNkUloo2AyfRdo8EziRXzdF4L0WvzmyQ886Q6fAe3zZGlCIBeMc8WIaUKcytVH2scnrPLfW3cHTcKB5QZWGvBheEOyzl2IxsXeFYOLSSNI_fHkiN56S_SqtPDKIG2fmgujTPf39ibPBcSBQzih6vwnGlfQSsktgl0-5aWbNyclz6ddnx83XPwqm3PA=w787-h559-no?authuser=1" alt="Project 2"></a>
                 </li>
                 <li>
-                    <a href="https://codepen.io/naomie74150/full/ExWvPjL">Project 3:Product landing page</a>
+                    <a href="https://codepen.io/naomie74150/full/ExWvPjL" target="_blank"> <img class="project-img" src="https://lh3.googleusercontent.com/kVDk9cD21FzdDmbJZm94DVN_o_w_y416NmRJ1un2lQA4Y3FQyg592FYpOsglfeYJoPoNUZkkdOWRUzqxZS8JBVSOlcETrNATO4oi5yL8So8Vp130hLjU4oDroFNUif75tck_WmoXa8-d5Y06TDmEP1aXbu-WC13zcu4IXaXjLporPCHXFvsqh7RuKEySvH_7f7YtwW3Ci6K0vzsW7nFOAOhXkt_ZXxHcfWEnSD5W0MWpvTV5O9b6Nfaurb3DYSReqd-YiVEOWXNFHVBY7Be51-iKmXDONtAJP4H875qHOs8lGaTkeKcKpM0G4sE-ssrBIXLei_I3ma8KXaKbTad1mexBv7F65u_XrP60egc8XqoV3q9ed2QVGhNZhuZEO8HUfpfD-yphXErWZvgOARVAwkteavkeBajsCbRGBH17it6aEiAUSdNof3twgRxqcS6UtOISkbeCZSBpM359gg3AgibeHwh4Qj63uqzp5Qn4h5Fr-P_yVNByz-i7V9K4T3bPSD_mPfYyYQvwf9tWC8r3P-WIiIKklGieH_-ET6A3YnMr7NZdRHTsXRD_6uqa6JniDAk-BhbBuDL-MkSML4cNaTpBA-Amb6PL1JvsEjs7OOE1H9I6Wnk8tWUuyftmn4CY1BnO601doy9gEDEYyqSX7Si-yyL2teSrPiQ6sUDkEDiteSfUaKFvFjR7Pq4oxMbKi8RSemBwXzrieTyeyjsumAc=w770-h532-no?authuser=1" alt="Project 3"></a>
                 </li>
                 <li>
-                    <a href="https://codepen.io/naomie74150/full/qBrvMZb">Project 4: Technical documentation page</a>
+                    <a href="https://codepen.io/naomie74150/full/qBrvMZb"><img class="project-img" src="https://lh3.googleusercontent.com/TtBIec0GnvO_lhMKyoIEGe_KAF4zJJbVtcxOMZf4OuB_H75_zX0LlGwYPoRhywwZZvnuhfDu2MoAVuMnrRysBg08M8lnww_YzAcPMg58-r-Mqwel3BgKTw3wWh6D8Jut6VvXLKsx0LCEjDSgZl3n7J-DJAxABGImukqy2xS2JDA303t6COWZ0XZqVF2-HpE1vhy1hx7cf74e92Y69986S75GpLGPiyqohlkNZFMgg9qAB-6IN-zDrqFbexlwmmXKP9WefDx103fCAraOmwiFKKW30Zle0qFfIfwUgrEhPVyOV2t89BKH2qc3rNwIYQQXj6mhjcqnkngcNqd3j9L7xFBY07u5eR7nNdB46QgbyEUlIadRsELXuq9_SdJOdkU0VYishC7UXlULg0FlF2dK43LigHJ-gS0Iz-8jTYN3hbtmXWEuZtHr50X9g1Fq_eJGH7TbbgSyOp6pkhbodairuk7ysYNRi_MG7jnwdFeda7KKAMKxpZ5kq0R9iNMU-SDYurGiLtDG28JpQvniY9lGWQ-ru3uLfVsY521VSftPpTbqf4K84p_gRSMm8Z8ttjolWMOJqprAde8g83Y2d57-zJImuM0iKxMMrZO-lPwnkk-MVEQ-IFLWSbH7L7Hg1Cak9JAgGKEXXwSLEBGfLJKrhTxj4EsOTa1zdLF4OD0hWhcIQK6Rq3_KuclLQcRmfVrkbYwnTR7OZ2Pjq7j_qDjNKWY=w707-h565-no?authuser=1" alt="Project 4"></a>
                 </li>
             </ul>
 
@@ -191,9 +212,11 @@ body{
         <div class="heading">
             <h1>Contact me here</h1>
         </div>
-        <h1><a id="profile-link" href="https://github.com/izantolpmoc" target="_blank">Github</a></h1>
-        <h1>LinkedIn</h1>
-        <h1>Email</h1>
+        <div class="contact-links">
+        <h1> <a id="profile-link" href="https://github.com/izantolpmoc" target="_blank">Github</a></h1>
+        <h1> <a href="https://www.linkedin.com/in/naomie-di-scala/" target="_blank">LinkedIn</a></h1>
+        <h1> <a href="mailto:naomie.discala@gmail.com">Email</a></h1>
+        </div>
     </section>
     </main>
 </body>
