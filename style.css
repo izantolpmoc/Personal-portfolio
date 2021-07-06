@@ -7,7 +7,7 @@
     margin-top: 0;
     padding: 0;
     text-decoration: none;
-
+    color: #edf0f1;
 }
 
 li, a, button {
@@ -17,21 +17,17 @@ li, a, button {
 
 }
 
-body{
-    
-    background-color: honeydew;
-    color: #edf0f1;
-}
 
 /* navbar*/
-header {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     padding: 0;
     margin: 0;
-    max-height: 15%;
+    top: 0;
+    height: 80px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     width: 100%;
     z-index: 10;
@@ -41,19 +37,22 @@ header {
 
 .logo{
     cursor: pointer;
-    max-height: auto;
-    max-width: auto;
+    max-height: 250%;
+    max-width: 250%;
+    position: fixed;
 }
 
 .nav-links {
     list-style: none;
-    
+    right: 0;
+    display: flex;
+    position:fixed;
+    margin-top: -10px;
 }
 
 .nav-links li {
     display: inline-block;
     padding: 0px 20px;
-    
     
 }
 
@@ -173,7 +172,7 @@ header {
     
   }
 
-  header {
+  .navbar {
     display: flex;
     align-items: center;
     position: fixed;
@@ -227,7 +226,10 @@ header {
 /* responsive for mobile phones*/
 @media (max-width:370px) {
 
-.nav-links {
+.navbar{
+    height: 75px;
+}
+    .nav-links {
     bottom: 0;
     right: 0;
     display: flex;
